@@ -1,4 +1,4 @@
-import math
+git import math
 
 result = 0
 
