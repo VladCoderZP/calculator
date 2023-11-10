@@ -1,5 +1,7 @@
 import math
 
+from time import sleep 
+
 result = 0
 
 
@@ -55,11 +57,13 @@ while 1:
             first_number = int(input('Input the first number: '))
             second_number = int(input('Input the second number: '))
             print(f'The result = {calc_min(first_number, second_number)}')
+	    sleep(2)
         case '+':
             first_number = int(input('Input the first number: '))
             second_number = int(input('Input the second number: '))
             print(f'The result = {calc_plus(first_number, second_number)}')
-        case '/':
+            sleep(2)
+	case '/':
             first_number = int(input('Input the first number: '))
             second_number = int(input('Input the second number: '))
             result = calc_division(first_number, second_number)
@@ -67,20 +71,25 @@ while 1:
                 print(result)
             else:
                 print(f'The result = {result}')
+                sleep(2)
         case '*':
             first_number = int(input('Input the first number: '))
             second_number = int(input('Input the second number: '))
             print(f'The result = {calc_multi(first_number, second_number)}')
+            sleep(2)
         case '**':
             first_number = int(input('Input the first number: '))
             second_number = int(input('Input the second number: '))
             print(f'The result = {calc_multi2(first_number, second_number)}')
+            sleep(2)
         case 'sqrt':
             first_number = int(input('Input the first number: '))
             print(f'The result = {calc_sqrt(first_number)}')
+            sleep(2)
         case 'cbrt':
             first_number = int(input('Input the first number: '))
             print(f'The result = {calc_cbrt(first_number)}')
+            sleep(2)
         case _:
             print('Thanks for use our program!')
             break
